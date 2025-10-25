@@ -75,7 +75,7 @@ with st.sidebar.expander("Match setup & options", expanded=True):
     row = st.session_state.kill_ops_table[chosen_row].copy()
     df = pd.DataFrame.from_dict(row, orient="index", columns=["points"])
     df.index.name = "killed"
-    edited = st.experimental_data_editor(df, num_rows="fixed")
+    edited = st.data_editor(df, num_rows="fixed")
     # Save changes back
     st.session_state.kill_ops_table[chosen_row] = {int(idx): int(edited.loc[idx,"points"]) for idx in edited.index}
     st.markdown("---")
