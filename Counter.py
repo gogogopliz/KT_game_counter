@@ -251,7 +251,7 @@ if st.button("Finalize match (reveal & apply final bonuses)"):
     else:
         st.session_state.players["A"]["final_bonus"] = 0
         st.session_state.players["B"]["final_bonus"] = 0
-    st.experimental_rerun()
+    st.rerun()
 
 # Reveal block and primary bonuses
 if st.session_state.revealed or st.session_state.turn > 4:
