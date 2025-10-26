@@ -7,9 +7,9 @@ import math
 st.set_page_config(page_title="Kill Team 2025 Scoring App", layout="wide")
 
 PRIMARY_ORANGE = "#f25c05"
-BG_DARK = "#0f0f0f"
+BG_DARK = "#eaeaea"
 CARD_BG = "#1b1b1b"
-TEXT_LIGHT = "#eaeaea"
+TEXT_LIGHT = "#0f0f0f"
 
 st.markdown(f"""
 <style>
@@ -182,15 +182,15 @@ with c1:
     if st.button("Advance turn (prompts initiative then advances)"):
         st.session_state.advance_after_apply = True
         st.session_state.show_initiative_prompt = True
-        st.experimental_rerun()
+        st.rerun()
 with c2:
     if st.button("Resolve initiative now (no advance)"):
         st.session_state.show_initiative_prompt = True
-        st.experimental_rerun()
+        st.rerun()
 with c3:
     if st.button("Reset match"):
         st.session_state.clear()
-        st.experimental_rerun()
+        st.rerun()
 
 st.markdown("---")
 
