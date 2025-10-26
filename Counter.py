@@ -7,9 +7,9 @@ import math
 st.set_page_config(page_title="Kill Team 2025 Scoring App", layout="wide")
 
 PRIMARY_ORANGE = "#f25c05"
-BG_DARK = "#eaeaea"
+BG_DARK = "#0f0f0f"
 CARD_BG = "#1b1b1b"
-TEXT_LIGHT = "#0f0f0f"
+TEXT_LIGHT = "#ffffff"
 
 st.markdown(f"""
 <style>
