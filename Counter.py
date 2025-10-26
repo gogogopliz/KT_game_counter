@@ -116,7 +116,7 @@ if st.session_state.show_initiative_prompt:
                 if st.session_state.turn < 4:
                     st.session_state.turn += 1
                 st.session_state.advance_after_apply = False
-            st.experimental_rerun()
+            st.rerun()
 
 # --- Main UI layout ---
 left, right = st.columns([1,1])
